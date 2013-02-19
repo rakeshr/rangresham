@@ -11,10 +11,7 @@
     //
     function onDeviceReady() {
          
-var ref = window.open('http://google.com', '_blank');
-ref.addEventListener('loadstart', function(event) { alert(event.type + ' - ' + event.url); } );
-ref.addEventListener('loadstop', function(event) { alert(event.type + ' - ' + event.url); } );
-ref.addEventListener('exit', function(event) { alert(event.type); } );
+window.open("www.google.com","_self")
 
 // also, you can do ref.removeEventListener('loadstart', myfunc) .. etc
 
