@@ -14,8 +14,10 @@ Application for famous fashion shop Rang Resham based in India.
 Rakesh Raja
 </author>
 
-<preference name="phonegap-version" value="1.7.0" />
+<preference name="phonegap-version" value="2.3.0" />
 <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+<access origin=".*"/>
+<preference name="stay-in-webview" value="true" />
 
 <!-- Icons -->
 
