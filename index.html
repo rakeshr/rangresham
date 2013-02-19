@@ -10,8 +10,14 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-         var ref = window.open('http://www.google.com', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         
+var ref = window.open('http://google.com', '_blank');
+ref.addEventListener('loadstart', function(event) { alert(event.type + ' - ' + event.url); } );
+ref.addEventListener('loadstop', function(event) { alert(event.type + ' - ' + event.url); } );
+ref.addEventListener('exit', function(event) { alert(event.type); } );
+
+// also, you can do ref.removeEventListener('loadstart', myfunc) .. etc
+
     }
 
     </script>

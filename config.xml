@@ -15,9 +15,6 @@ Rakesh Raja
 </author>
 
 <preference name="phonegap-version" value="2.3.0" />
-<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-<access origin=".*"/>
-<preference name="stay-in-webview" value="true" />
 
 <!-- Icons -->
 
@@ -31,5 +28,10 @@ Rakesh Raja
 <gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
 <gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
 <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+
+<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+<access origin="*"/>
+<preference name="stay-in-webview" value="true" />
+
 
 </widget>
